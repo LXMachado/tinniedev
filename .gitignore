@@ -1,0 +1,48 @@
+# PHP
+*.php
+*.phtml
+*.php~
+*.phar
+*.phpt
+
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.env.local
+.env.*.local
+
+# Sensitive files
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+*.log
+
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+build/
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# OS
+__pycache__/
+*.pyc
+
+# Misc
+*.cache
+.cache/
+*.tmp
+temp/
+tmp/
