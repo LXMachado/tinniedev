@@ -1,0 +1,352 @@
+Create a premium, conversion-focused homepage in Figma for a freelance web development business called **TinnieDev**, based in Gold Coast, Australia.
+
+IMPORTANT STRATEGIC POSITIONING:
+
+This is NOT a cheap freelancer.
+This is NOT a fake big agency.
+This is NOT a Silicon Valley SaaS company.
+
+This is a serious, trustworthy, premium independent local specialist.
+
+The brand should feel like:
+- High-end modern digital consultancy
+- Technical competence
+- Transparent and professional
+- Efficient and outcome-focused
+- Local and approachable
+- Premium without arrogance
+- Strong without exaggeration
+
+The design must feel expensive, sharp, polished, modern, and conversion-oriented.
+
+Use the provided design system exactly for:
+- colors
+- typography
+- spacing
+- surfaces
+- elevation
+- interaction style
+- glassmorphism rules
+- no-line rule
+- tonal hierarchy
+- technical / premium visual language
+
+-----------------------------------
+CORE GOAL OF THE PAGE
+-----------------------------------
+
+Convert local Australian businesses into enquiries.
+
+Target users:
+- Tradies
+- Allied health clinics
+- Small professional businesses
+- Growing service businesses
+- Owners frustrated with poor websites
+
+Primary CTA:
+Book Free Audit
+
+Secondary CTA:
+View Pricing
+
+-----------------------------------
+PAGE STRUCTURE
+-----------------------------------
+
+1. TOP NAVIGATION
+
+Logo: TinnieDev
+
+Navigation:
+Process
+Pricing
+Work
+About
+Contact
+
+CTA button:
+Free Audit
+
+Sticky nav with premium glass effect.
+
+-----------------------------------
+
+2. HERO SECTION
+
+Large premium headline options:
+
+Option A:
+Websites that look sharp, load fast, and bring enquiries.
+
+Option B:
+Modern websites built to grow your business.
+
+Option C:
+Professional websites for businesses that want better results.
+
+Subheadline:
+
+TinnieDev builds high-performance websites, lead generation systems, and custom business tools for Australian businesses that want more enquiries and less friction.
+
+Buttons:
+[Book Free Audit]
+[View Pricing]
+
+Right side visual:
+
+A refined premium dashboard panel showing:
+- fast load speed
+- enquiry notifications
+- conversion tracking
+- clean analytics cards
+
+IMPORTANT:
+No fake metrics like 120+ clients or 4.2x growth.
+Use believable labels only.
+
+Examples:
+Fast Performance
+Mobile Ready
+Lead Tracking
+SEO Ready
+Local Support
+
+-----------------------------------
+
+3. TRUST BAR
+
+Use clean premium icon row or metric cards.
+
+Examples:
+Gold Coast Based
+Direct Developer Access
+Transparent Pricing
+Fast Turnaround
+Performance Focused
+Ongoing Support
+
+-----------------------------------
+
+4. SERVICES SECTION
+
+Headline:
+Starting Points
+
+Subheadline:
+Transparent pricing for websites, web apps, and custom systems. All builds include performance optimization and support.
+
+Create 3 premium pricing cards.
+
+CARD 1:
+Online Presence
+Starter
+$2,500 one-time
+
+Includes:
+5-page responsive website
+Mobile optimized
+Contact forms
+Basic SEO
+Google Business Profile setup
+30 days support
+
+CTA:
+Get Started
+
+CARD 2 (highlighted):
+Lead Generation System
+Growth
+$5,500 one-time
+
+Includes:
+Everything in Starter
+Conversion optimisation
+Lead alerts (SMS / Email)
+CRM integration
+Analytics dashboard
+A/B testing setup
+90 days support
+
+CTA:
+Book Discovery Call
+
+CARD 3:
+Business Systems
+Custom Quote
+
+Includes:
+Custom portals
+Admin dashboards
+Automation workflows
+Third-party integrations
+Reporting systems
+Dedicated support
+
+CTA:
+Request Quote
+
+-----------------------------------
+
+5. BEFORE / AFTER VALUE SECTION
+
+Split layout.
+
+LEFT:
+The Hidden Cost of an Outdated Website
+
+Examples:
+Slow mobile performance
+Missed enquiries
+Poor trust signals
+No tracking
+Hard to update
+
+RIGHT:
+What TinnieDev Delivers
+
+Examples:
+Modern premium brand presence
+Fast mobile experience
+Reliable lead capture
+Better trust and conversions
+Systems that save admin time
+
+-----------------------------------
+
+6. PROCESS SECTION
+
+Headline:
+Simple, Transparent Process
+
+4 steps:
+
+1. Audit
+Review current site and opportunities
+
+2. Strategy
+Recommend best solution for goals and budget
+
+3. Build
+Design and develop professionally
+
+4. Launch & Support
+Go live smoothly with ongoing help
+
+Use premium timeline / system cards.
+
+-----------------------------------
+
+7. PORTFOLIO SECTION
+
+Use realistic premium mockups.
+
+Examples:
+Tradie Website Redesign
+Physio Clinic Booking Site
+Lead Generation Landing Page
+Shopify Product Store
+Custom Admin Dashboard
+
+If no real client work:
+Use concept projects styled professionally.
+
+-----------------------------------
+
+8. WHY WORK WITH TINNIEDEV
+
+Cards:
+
+Direct communication with developer
+No agency overhead
+Transparent fixed pricing
+Modern technology stack
+Local Australian understanding
+Fast and responsive support
+
+-----------------------------------
+
+9. FINAL CTA
+
+Headline:
+Ready for a website that actually works?
+
+Text:
+Let’s discuss where your current website is losing opportunities and how to improve it.
+
+Buttons:
+Book Free Audit
+Send Enquiry
+
+-----------------------------------
+VISUAL DIRECTION
+-----------------------------------
+
+Use provided design system heavily.
+
+Mood:
+Dark premium modern interface.
+
+Think:
+Apple meets Linear meets Framer meets premium local consultancy.
+
+Use:
+- refined gradients
+- subtle glow
+- layered surfaces
+- glass navigation
+- polished cards
+- clean spacing
+- premium typography hierarchy
+- subtle motion cues
+- expensive UI feel
+
+Avoid:
+- generic templates
+- cheesy freelancer look
+- fake startup vibe
+- clutter
+- exaggerated claims
+- stock-photo cringe
+- corporate stiffness
+
+-----------------------------------
+COPY STYLE
+-----------------------------------
+
+Australian English spelling.
+
+Tone:
+Confident
+Professional
+Clear
+Straightforward
+Trustworthy
+
+No hype words like:
+revolutionary
+game-changing
+10x
+world-class
+enterprise-scale
+
+-----------------------------------
+MOBILE RESPONSIVENESS
+-----------------------------------
+
+Design desktop + mobile responsive layouts.
+
+Must look elite on mobile.
+
+-----------------------------------
+FINAL DELIVERABLE
+-----------------------------------
+
+Produce a homepage that feels like a premium Australian web specialist charging good money because they are worth it.
+
+A business owner should think:
+
+“This looks professional.”
+“This person knows what they’re doing.”
+“This feels trustworthy.”
+“This is worth enquiring about.”
