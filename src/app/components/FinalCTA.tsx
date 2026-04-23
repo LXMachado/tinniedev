@@ -12,19 +12,34 @@ export function FinalCTA() {
         </p>
 
         <div className="flex flex-wrap gap-4 justify-center">
-          <button className="px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all hover:scale-105 flex items-center gap-2 group">
+          <a
+            href="#contact"
+            className="px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all hover:scale-105 flex items-center gap-2 group"
+          >
             Book Free Audit
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
-          <button className="px-8 py-4 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/80 transition-colors flex items-center gap-2">
+          </a>
+          <a
+            href="mailto:hello@tinniedev.com"
+            className="px-8 py-4 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/80 transition-colors flex items-center gap-2"
+          >
             <Mail className="w-5 h-5" />
             Send Enquiry
-          </button>
+          </a>
         </div>
 
         <div className="mt-16 pt-16 border-t border-border/30">
-          <div className="text-sm text-muted-foreground">
-            © 2026 TinnieDev. Gold Coast, Australia.
+          <div className="flex flex-col items-center gap-3 text-sm text-muted-foreground">
+            <div>© 2026 TinnieDev. Gold Coast, Australia.</div>
+            <div className="text-xs">Opening hours: Monday to Friday, 9:00 AM to 5:00 PM (AEST).</div>
+            <div className="flex items-center gap-4 text-xs">
+              <a href="/privacy-policy.html" className="hover:text-foreground transition-colors">
+                Privacy Policy
+              </a>
+              <a href="/terms-and-conditions.html" className="hover:text-foreground transition-colors">
+                Terms & Conditions
+              </a>
+            </div>
           </div>
         </div>
       </div>

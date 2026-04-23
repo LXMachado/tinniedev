@@ -63,9 +63,12 @@ export function Navigation() {
             </a>
           </div>
 
-          <button className="px-5 py-2.5 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm">
+          <a
+            href="#contact"
+            className="px-5 py-2.5 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm"
+          >
             Free Audit
-          </button>
+          </a>
         </div>
       </div>
     </nav>

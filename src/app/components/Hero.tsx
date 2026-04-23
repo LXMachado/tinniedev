@@ -17,13 +17,19 @@ export function Hero() {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <button className="px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all hover:scale-105 flex items-center gap-2 group">
+              <a
+                href="#contact"
+                className="px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all hover:scale-105 flex items-center gap-2 group"
+              >
                 Book Free Audit
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </button>
-              <button className="px-6 py-3 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/80 transition-colors">
+              </a>
+              <a
+                href="#pricing"
+                className="px-6 py-3 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/80 transition-colors"
+              >
                 View Pricing
-              </button>
+              </a>
             </div>
           </div>
 
