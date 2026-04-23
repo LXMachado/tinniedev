@@ -21,8 +21,13 @@ export function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <div className="text-xl tracking-tight text-foreground">
-            TinnieDev
+          <div className="flex items-center gap-3 text-xl tracking-tight text-foreground">
+            <img
+              src="/brand-monogram.png"
+              alt="TinnieDev monogram"
+              className="h-8 w-10 object-contain"
+            />
+            <span>TinnieDev</span>
           </div>
 
           <div className="hidden md:flex items-center gap-8">
