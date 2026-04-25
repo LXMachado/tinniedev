@@ -9,7 +9,7 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
             <h1 className="text-5xl lg:text-6xl tracking-tight">
-              Websites that look sharp, load fast, and bring enquiries.
+              Websites that help Australian service businesses get more calls, quotes and enquiries.
             </h1>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
