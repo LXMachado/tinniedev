@@ -32,5 +32,29 @@ export default defineConfig({
   },
 
   // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
-  assetsInclude: ['**/*.svg', '**/*.csv'],
+  assetsInclude: ['**/*.svg', '**/*.csv', '**/*.webp', '**/*.avif'],
+
+  build: {
+    // Optimize for SEO and performance
+    target: 'esnext',
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: false,
+    minify: 'esbuild',
+    cssCodeSplit: true,
+    // Generate manifest for better caching
+    manifest: 'manifest.json',
+    // Optimize chunk sizes for better loading
+    chunkSizeWarningLimit: 500
+  },
+
+  // Optimize for static site serving
+  server: {
+    headers: {
+      'X-Content-Type-Options': 'nosniff',
+      'X-Frame-Options': 'DENY',
+      'X-XSS-Protection': '1; mode=block',
+      'Referrer-Policy': 'strict-origin-when-cross-origin',
+    }
+  }
 })

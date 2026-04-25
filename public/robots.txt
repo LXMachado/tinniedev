@@ -1,0 +1,36 @@
+# TinnieDev Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://tinniedev.com/sitemap.xml
+
+# Block sensitive paths
+Disallow: /admin/
+Disallow: /tmp/
+Disallow: /test/
+
+# Crawl delay to prevent server overload
+Crawl-delay: 1
+
+# Search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Mobile
+User-agent: Googlebot-Mobile
+Allow: /
+
+# Images
+User-agent: Googlebot-Image
+Allow: /
+
+# Local business
+User-agent: *
+Disallow: /privacy-policy.html
+Disallow: /terms-and-conditions.html

@@ -1,6 +1,6 @@
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "ProfessionalService",
   name: "TinnieDev",
   url: "https://tinniedev.com",
   logo: "https://tinniedev.com/brand-monogram.png",
@@ -26,7 +26,9 @@ const localBusinessSchema = {
     "@type": "Person",
     name: "Alexandre Machado",
   },
-  sameAs: ["https://tinniedev.com"],
+  sameAs: [
+    "https://tinniedev.com",
+  ],
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
@@ -35,6 +37,42 @@ const localBusinessSchema = {
       closes: "17:00",
     },
   ],
+  serviceType: [
+    "Website Development",
+    "Lead Generation Systems",
+    "Custom Web Applications",
+    "Web Performance Optimization",
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Web Development Services",
+    itemListElement: [
+      {
+        "@type": "OfferCatalog",
+        name: "Starter Website",
+        itemListElement: [{
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Core Service Pages Website",
+            description: "Mobile responsive build with contact and quote forms"
+          }
+        }]
+      },
+      {
+        "@type": "OfferCatalog",
+        name: "Lead Generation Website",
+        itemListElement: [{
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Conversion-Focused Website",
+            description: "Quote request funnel with service area structure and lead tracking"
+          }
+        }]
+      }
+    ]
+  },
 };
 
 export function LocalBusinessSchema() {

@@ -1,0 +1,57 @@
+/*
+  TinnieDev - Web Development Team
+  ===============================
+  
+  Team: Alexandre Machado
+  Location: Gold Coast, Australia
+  Role: Lead Developer
+  Contact: hello@tinniedev.com
+  Website: https://tinniedev.com
+  
+  What We Do:
+  -----------
+  - High-performance website development
+  - Lead generation systems
+  - Custom business applications
+  - Web performance optimization
+  - SEO-ready structures
+  
+  Technology Stack:
+  ----------------
+  - React 18 + Vite
+  - Tailwind CSS v4
+  - MUI v7 & Radix UI
+  - Node.js
+  - Modern Web Standards
+  
+  SEO Best Practices:
+  ------------------
+  - Mobile-first responsive design
+  - Fast load times (< 1s)
+  - Semantic HTML structure
+  - Schema.org structured data
+  - Open Graph & Twitter Cards
+  - XML sitemaps
+  - robots.txt optimization
+  - Canonical URLs
+  - Image optimization
+  - Accessibility compliant
+  
+  Service Areas:
+  -------------
+  - Gold Coast, QLD
+  - Brisbane, QLD
+  - Sunshine Coast, QLD
+  - Tweed Heads, NSW
+  - Logan, QLD
+  - Ipswich, QLD
+  - Australia-wide
+  
+  Languages:
+  ---------
+  - English (Australia)
+  
+  Last Updated:
+  ------------
+  April 2026
+*/

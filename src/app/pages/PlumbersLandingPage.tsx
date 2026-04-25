@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import {
   ArrowRight,
   BadgeCheck,
@@ -132,10 +133,146 @@ function SectionHeading({
 }
 
 export function PlumbersLandingPage() {
+  const pageUrl = "https://tinniedev.com/plumbers";
+  const imageUrl = "https://tinniedev.com/alexandre-machado-australian-web-developer.png";
+  
   return (
     <>
+      <Helmet>
+        {/* Basic Meta Tags */}
+        <title>Plumbing Websites | Web Design for Plumbers | TinnieDev</title>
+        <meta name="description" content="Professional plumbing websites designed to generate more calls and quote requests. Fast, mobile-first web design for Australian plumbers with SEO-ready structure." />
+        <meta name="keywords" content="plumbing websites, web design for plumbers, plumber website design, plumbing web design Australia, plumber SEO, plumbing lead generation" />
+        <meta name="author" content="Alexandre Machado, TinnieDev" />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+        <link rel="canonical" href={pageUrl} />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Plumbing Websites | Professional Web Design for Plumbers | TinnieDev" />
+        <meta property="og:description" content="High-converting plumbing websites designed to generate more emergency calls and quote requests. Mobile-first, fast-loading, SEO-optimized." />
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={imageUrl} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Professional plumbing website design by TinnieDev" />
+        <meta property="og:site_name" content="TinnieDev" />
+        <meta property="og:locale" content="en_AU" />
+        <meta property="og:street_address" content="Gold Coast" />
+        <meta property="og:region" content="QLD" />
+        <meta property="og:country-name" content="Australia" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Plumbing Websites | Professional Web Design for Plumbers" />
+        <meta name="twitter:description" content="Fast, mobile-first plumbing websites that convert visitors into calls and quote requests." />
+        <meta name="twitter:image" content={imageUrl} />
+        <meta name="twitter:image:alt" content="Professional plumbing website design by TinnieDev" />
+        <meta name="twitter:site" content="@tinniedev" />
+        
+        {/* Additional Meta Tags */}
+        <meta name="geo.region" content="AU-QLD" />
+        <meta name="geo.placename" content="Gold Coast" />
+        <meta name="geo.position" content="-28.0167;153.4000" />
+        <meta name="ICBM" content="-28.0167, 153.4000" />
+        
+        {/* Structured Data - Plumbing Business */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "TinnieDev Plumbing Website Design",
+            "url": pageUrl,
+            "logo": "https://tinniedev.com/brand-monogram.png",
+            "image": imageUrl,
+            "description": "Professional plumbing website design and development services for Australian plumbing businesses. Fast, mobile-first websites that generate more calls and quote requests.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Gold Coast",
+              "addressRegion": "QLD",
+              "addressCountry": "AU"
+            },
+            "areaServed": [
+              "Gold Coast",
+              "Brisbane",
+              "Sunshine Coast",
+              "Tweed",
+              "Logan",
+              "Ipswich",
+              "Queensland",
+              "Australia"
+            ],
+            "serviceType": "Plumbing Website Design",
+            "provider": {
+              "@type": "ProfessionalService",
+              "name": "Alexandre Machado",
+              "url": "https://tinniedev.com",
+              "description": "Gold Coast-based web developer building fast websites and lead generation systems for Australian service businesses."
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Plumbing Website Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Starter Plumbing Website",
+                    "description": "Mobile responsive plumbing website with core service pages and contact forms",
+                    "price": "2500",
+                    "priceCurrency": "AUD"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Lead Generation Plumbing Website",
+                    "description": "Conversion-focused plumbing website with quote funnel and service area pages",
+                    "price": "5500",
+                    "priceCurrency": "AUD"
+                  }
+                }
+              ]
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "09:00",
+              "closes": "17:00"
+            }
+          })}
+        </script>
+        
+        {/* Additional structured data for FAQ */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What makes a good plumbing website?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A good plumbing website is mobile-first, loads quickly, has clear call-to-action buttons for emergency calls, includes an easy-to-use quote request form, and is optimized for local SEO to appear in Google search results."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much does a plumbing website cost?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Plumbing websites start from $2,500 for a starter website with core service pages. Lead generation websites with quote funnels and service area pages start from $5,500. Custom systems are quoted based on specific requirements."
+                }
+              }
+            ]
+          })}
+        </script>
+      </Helmet>
+
       <main className="overflow-hidden">
-        <section className="relative px-6 pb-20 pt-32 lg:px-8 lg:pb-28">
+        <section className="relative px-6 pb-20 pt-32 lg:px-8">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_10%,rgba(255,255,255,0.10),transparent_30%),linear-gradient(180deg,rgba(255,255,255,0.04),transparent_45%)]" />
           <div className="relative mx-auto max-w-7xl">
             <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
@@ -145,7 +282,7 @@ export function PlumbersLandingPage() {
                   Plumbing websites for Australian service businesses
                 </div>
                 <h1 className="max-w-4xl text-4xl tracking-tight md:text-6xl lg:text-7xl">
-                  Websites for Plumbers That Generate More Calls & Quote Requests
+                  Websites for Plumbers That Generate More Calls &amp; Quote Requests
                 </h1>
                 <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
                   We help Australian plumbing businesses replace outdated websites with fast, modern systems built to convert visitors into real enquiries.
@@ -393,7 +530,7 @@ export function PlumbersLandingPage() {
               <div className="relative aspect-[4/5] overflow-hidden rounded-xl border border-border/30 bg-accent/20">
                 <img
                   src="/alexandre-machado-australian-web-developer.png"
-                  alt="Alexandre Machado, Gold Coast-based developer"
+                  alt="Alexandre Machado, Gold Coast-based developer and founder of TinnieDev"
                   className="h-full w-full object-cover"
                   loading="lazy"
                 />
@@ -440,7 +577,7 @@ export function PlumbersLandingPage() {
           <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-[1fr_1.4fr_1fr]">
             <div>
               <div className="flex items-center gap-3 text-xl">
-                <img src="/brand-monogram.png" alt="TinnieDev monogram" className="h-8 w-10 object-contain" />
+                <img src="/brand-monogram.png" alt="TinnieDev monogram logo" className="h-8 w-10 object-contain" />
                 <span>TinnieDev</span>
               </div>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -461,30 +598,12 @@ export function PlumbersLandingPage() {
               <a href={auditHref} className="block hover:text-foreground">Book Free Audit</a>
               <a href={quoteHref} className="block hover:text-foreground">Request Quote</a>
               <a href="/privacy-policy.html" className="block hover:text-foreground">Privacy Policy</a>
-              <a href="/terms-and-conditions.html" className="block hover:text-foreground">Terms & Conditions</a>
+              <a href="/terms-and-conditions.html" className="block hover:text-foreground">Terms &amp; Conditions</a>
               <div className="pt-2 text-xs">© 2026 TinnieDev. Gold Coast, Australia.</div>
             </div>
           </div>
         </footer>
       </main>
-
-      <div className="fixed inset-x-0 bottom-0 z-50 border-t border-border/50 bg-background/90 p-3 backdrop-blur md:hidden">
-        <div className="grid grid-cols-2 gap-3">
-          <a
-            href={auditHref}
-            target="_blank"
-            rel="noreferrer"
-            className="flex items-center justify-center gap-2 rounded-lg bg-primary px-4 py-3 text-sm text-primary-foreground"
-          >
-            <Phone className="h-4 w-4" />
-            Free Audit
-          </a>
-          <a href={quoteHref} className="flex items-center justify-center gap-2 rounded-lg bg-secondary px-4 py-3 text-sm text-secondary-foreground">
-            <Mail className="h-4 w-4" />
-            Quote
-          </a>
-        </div>
-      </div>
     </>
   );
 }
