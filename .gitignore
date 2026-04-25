@@ -1,5 +1,7 @@
 # PHP
 *.php
+public/api/*.php
+public/api/**/*.php
 *.phtml
 *.php~
 *.phar
@@ -18,6 +20,7 @@ Thumbs.db
 .env
 .env.*
 !.env.example
+public/api/config.php
 *.pem
 *.key
 credentials.json
