@@ -62,10 +62,10 @@ export const projects: Project[] = [
       "The result is a clean, local-focused website that presents Mermaid Plumbing as professional, approachable, and easy to contact across desktop and mobile.",
     visuals: [
       {
-        title: "Homepage desktop screenshot",
-        image: "/images/projects/mermaid-plumbing-thumbnail.webp",
-        alt: "Mermaid Plumbing desktop and mobile website mockup",
-        description: "Desktop and mobile mockup showing the overall branded website direction.",
+        title: "Homepage website concept",
+        image: "/images/projects/mermaid-plumbing-hero.webp",
+        alt: "Mermaid Plumbing homepage website concept",
+        description: "A branded homepage direction focused on local trust and quote enquiries.",
       },
       {
         title: "Mobile screenshot",
@@ -75,16 +75,10 @@ export const projects: Project[] = [
         imageClassName: "object-contain p-6 md:p-8",
       },
       {
-        title: "Logo / favicon preview",
-        image: "/images/projects/mermaid-plumbing-logo-preview.webp",
-        alt: "Mermaid Plumbing logo and favicon preview",
-        description: "Brand mark and app-style icon treatment for local recognition.",
-      },
-      {
-        title: "Lead enquiry section screenshot",
-        image: "/images/projects/mermaid-plumbing-hero.webp",
-        alt: "Mermaid Plumbing homepage hero and enquiry section",
-        description: "Clear service relevance, trust signals, and quote-focused calls to action.",
+        title: "Portfolio thumbnail",
+        image: "/images/projects/mermaid-plumbing-thumbnail.webp",
+        alt: "Mermaid Plumbing portfolio thumbnail",
+        description: "A compact preview of the trade website direction.",
       },
     ],
   },
@@ -101,6 +95,7 @@ export const projects: Project[] = [
       "An allied health website concept by TinnieDev, focused on patient trust, online bookings, local visibility, and clean responsive design.",
     subtitle:
       "A placeholder allied health website concept for a Surfers Paradise physio clinic, focused on patient confidence, clear services, and easy booking paths.",
+    liveUrl: "https://surfersphysio.com.au/",
     overview: {
       projectType: "Concept allied health website",
       industry: "Physiotherapy / Allied Health",
@@ -142,12 +137,12 @@ export const projects: Project[] = [
   {
     slug: "shopify-product-store",
     category: "SHOPIFY / E-COMMERCE",
-    title: "NazkaTech Product Store",
+    title: "Nazka.tech",
     cardDescription:
       "A focused product storefront designed to present a tech product clearly and support online sales.",
     badge: "E-Commerce",
     thumbnail: "/images/projects/nazkatech-thumbnail.webp",
-    pageTitle: "NazkaTech Shopify Product Store Case Study | TinnieDev",
+    pageTitle: "Nazka.tech Case Study | TinnieDev",
     metaDescription:
       "A product store case study by TinnieDev, focused on clear product presentation, responsive design, and e-commerce-ready structure.",
     subtitle:
@@ -168,25 +163,25 @@ export const projects: Project[] = [
       "Used a restrained visual system suited to a tech product brand.",
     ],
     outcome:
-      "The project gives NazkaTech a focused online storefront that presents the product clearly and supports a straightforward shopping experience.",
+      "The project gives Nazka.tech a focused online storefront that presents the product clearly and supports a straightforward shopping experience.",
     visuals: [
       {
         title: "Storefront hero",
         image: "/images/projects/nazkatech-hero.webp",
-        alt: "NazkaTech product store homepage",
+        alt: "Nazka.tech product store homepage",
         description: "Product-first homepage presentation.",
       },
       {
         title: "Mobile storefront",
         image: "/images/projects/nazkatech-mobile.webp",
-        alt: "NazkaTech mobile product store",
+        alt: "Nazka.tech mobile product store",
         description: "Responsive product browsing for mobile shoppers.",
         imageClassName: "object-contain p-6 md:p-8",
       },
       {
         title: "Portfolio thumbnail",
         image: "/images/projects/nazkatech-thumbnail.webp",
-        alt: "NazkaTech product store thumbnail",
+        alt: "Nazka.tech product store thumbnail",
         description: "A compact preview of the e-commerce direction.",
       },
     ],
