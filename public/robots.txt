@@ -9,6 +9,8 @@ Sitemap: https://tinniedev.com/sitemap.xml
 Disallow: /admin/
 Disallow: /tmp/
 Disallow: /test/
+Disallow: /_headers
+Disallow: /netlify.toml
 
 # Crawl delay to prevent server overload
 Crawl-delay: 1
@@ -30,7 +32,9 @@ Allow: /
 User-agent: Googlebot-Image
 Allow: /
 
-# Local business
+# Block access to server config files
 User-agent: *
-Disallow: /privacy-policy.html
-Disallow: /terms-and-conditions.html
+Disallow: /.env
+Disallow: /.git/
+Disallow: /.well-known/apple-developer-merchantid-domain-association
+Disallow: /.well-known/assetlinks.json
