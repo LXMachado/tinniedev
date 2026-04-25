@@ -389,14 +389,17 @@ export function PlumbersLandingPage() {
 
         <section id="about" className="bg-accent/10 px-6 py-24 lg:px-8">
           <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[0.8fr_1.2fr]">
-            <div className="rounded-2xl border border-border/40 bg-card/30 p-5">
-              <div className="aspect-[4/5] rounded-xl border border-border/30 bg-[linear-gradient(160deg,rgba(255,255,255,0.16),rgba(255,255,255,0.03))] p-6">
-                <div className="flex h-full flex-col justify-between">
-                  <img src="/brand-monogram.png" alt="TinnieDev monogram" className="h-12 w-14 object-contain" />
-                  <div>
-                    <div className="text-3xl">Alexandre Machado</div>
-                    <div className="mt-2 text-sm text-muted-foreground">Gold Coast-based developer</div>
-                  </div>
+            <div className="rounded-2xl border border-border/40 bg-card/30 p-3">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-xl border border-border/30 bg-accent/20">
+                <img
+                  src="/alexandre-machado-australian-web-developer.png"
+                  alt="Alexandre Machado, Gold Coast-based developer"
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background/95 via-background/70 to-transparent p-6 pt-24">
+                  <div className="text-3xl">Alexandre Machado</div>
+                  <div className="mt-2 text-sm text-muted-foreground">Gold Coast-based developer</div>
                 </div>
               </div>
             </div>

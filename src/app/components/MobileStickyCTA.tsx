@@ -1,6 +1,6 @@
 import { CalendarCheck } from "lucide-react";
 
-export const calendlyAuditUrl = "https://calendly.com/tinniedev/free-audit";
+export const calendlyAuditUrl = "https://calendly.com/bookings-machado/15-minute-website-audit";
 
 export function MobileStickyCTA() {
   return (

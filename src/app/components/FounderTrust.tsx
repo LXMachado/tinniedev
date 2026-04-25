@@ -1,4 +1,4 @@
-import { Check, User } from "lucide-react";
+import { Check } from "lucide-react";
 
 const trustPoints = [
   "Direct communication",
@@ -11,17 +11,18 @@ export function FounderTrust() {
   return (
     <section id="founder" className="py-24 px-6 lg:px-8">
       <div className="max-w-7xl mx-auto grid gap-10 lg:grid-cols-[0.8fr_1.2fr] items-center">
-        <div className="rounded-2xl border border-border/40 bg-card/30 p-5">
-          <div className="aspect-[4/5] rounded-xl border border-border/30 bg-[linear-gradient(160deg,rgba(255,255,255,0.16),rgba(255,255,255,0.03))] p-6">
-            <div className="flex h-full flex-col justify-between">
-              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-accent/50 border border-border/30">
-                <User className="h-7 w-7 text-foreground" />
-              </div>
-              <div>
-                <div className="text-3xl tracking-tight">Alexandre Machado</div>
-                <div className="mt-2 text-sm text-muted-foreground">
-                  Founder & Developer, TinnieDev
-                </div>
+        <div className="rounded-2xl border border-border/40 bg-card/30 p-3">
+          <div className="relative aspect-[4/5] overflow-hidden rounded-xl border border-border/30 bg-accent/20">
+            <img
+              src="/alexandre-machado-australian-web-developer.png"
+              alt="Alexandre Machado, founder and developer at TinnieDev"
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background/95 via-background/70 to-transparent p-6 pt-24">
+              <div className="text-3xl tracking-tight">Alexandre Machado</div>
+              <div className="mt-2 text-sm text-muted-foreground">
+                Founder & Developer, TinnieDev
               </div>
             </div>
           </div>

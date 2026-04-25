@@ -4,7 +4,7 @@ const localBusinessSchema = {
   name: "TinnieDev",
   url: "https://tinniedev.com",
   logo: "https://tinniedev.com/brand-monogram.png",
-  image: "https://tinniedev.com/brand-monogram.png",
+  image: "https://tinniedev.com/alexandre-machado-australian-web-developer.png",
   description:
     "Gold Coast-based web developer building fast websites, lead generation systems, and custom business systems for Australian service businesses.",
   address: {
