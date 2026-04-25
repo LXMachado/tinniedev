@@ -3,6 +3,8 @@ import { calendlyAuditUrl } from "./MobileStickyCTA";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const isHomePage = window.location.pathname === "/";
+  const sectionHref = (sectionId: string) => (isHomePage ? `#${sectionId}` : `/#${sectionId}`);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,42 +24,42 @@ export function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <div className="flex items-center gap-3 text-xl tracking-tight text-foreground">
+          <a href="/" className="flex items-center gap-3 text-xl tracking-tight text-foreground">
             <img
               src="/brand-monogram.png"
               alt="TinnieDev monogram"
               className="h-8 w-10 object-contain"
             />
             <span>TinnieDev</span>
-          </div>
+          </a>
 
           <div className="hidden md:flex items-center gap-8">
             <a
-              href="#process"
+              href={sectionHref("process")}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Process
             </a>
             <a
-              href="#pricing"
+              href={sectionHref("pricing")}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Pricing
             </a>
             <a
-              href="#work"
+              href={sectionHref("work")}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Work
             </a>
             <a
-              href="#about"
+              href={sectionHref("about")}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               About
             </a>
             <a
-              href="#contact"
+              href={sectionHref("contact")}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Contact

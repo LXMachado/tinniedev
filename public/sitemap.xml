@@ -23,6 +23,19 @@
     </image:image>
   </url>
 
+  <!-- Mermaid Plumbing Case Study -->
+  <url>
+    <loc>https://tinniedev.com/projects/plumber-website</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tinniedev.com/images/projects/mermaid-plumbing-hero.webp</image:loc>
+      <image:title>Mermaid Plumbing Website Case Study</image:title>
+      <image:caption>Local plumbing website case study by TinnieDev</image:caption>
+    </image:image>
+  </url>
+
   <!-- Plumbers Landing Page -->
   <url>
     <loc>https://tinniedev.com/plumbers</loc>

@@ -11,10 +11,13 @@ import { FounderTrust } from "./components/FounderTrust";
 import { FinalCTA } from "./components/FinalCTA";
 import { LocalBusinessSchema } from "./components/LocalBusinessSchema";
 import { MobileStickyCTA } from "./components/MobileStickyCTA";
+import { MermaidPlumbingCaseStudy } from "./pages/MermaidPlumbingCaseStudy";
 import { PlumbersLandingPage } from "./pages/PlumbersLandingPage";
 
 export default function App() {
-  const isPlumbersPage = window.location.pathname === "/plumbers";
+  const pathname = window.location.pathname;
+  const isPlumbersPage = pathname === "/plumbers";
+  const isMermaidPlumbingCaseStudy = pathname === "/projects/plumber-website";
 
   return (
     <div className="dark min-h-screen bg-background text-foreground">
@@ -28,6 +31,8 @@ export default function App() {
       <Navigation />
       {isPlumbersPage ? (
         <PlumbersLandingPage />
+      ) : isMermaidPlumbingCaseStudy ? (
+        <MermaidPlumbingCaseStudy />
       ) : (
         <>
           <Helmet>
@@ -61,7 +66,7 @@ export default function App() {
           </main>
         </>
       )}
-      {!isPlumbersPage && <MobileStickyCTA />}
+      {!isPlumbersPage && !isMermaidPlumbingCaseStudy && <MobileStickyCTA />}
     </div>
   );
 }
