@@ -21,20 +21,24 @@ const galleryItems = [
   {
     title: "Homepage desktop screenshot",
     image: "/images/projects/mermaid-plumbing-thumbnail.webp",
-    className: "md:col-span-2",
+    description: "Desktop and mobile mockup showing the overall branded website direction.",
   },
   {
     title: "Mobile screenshot",
     image: "/images/projects/mermaid-plumbing-mobile.webp",
+    description: "Mobile-first hero, trust card, and enquiry actions.",
+    imageClassName: "object-contain p-6 md:p-8",
   },
   {
     title: "Logo / favicon preview",
     image: "/images/projects/mermaid-plumbing-logo-preview.webp",
+    description: "Brand mark and app-style icon treatment for local recognition.",
+    imageClassName: "object-cover",
   },
   {
     title: "Lead enquiry section screenshot",
     image: "/images/projects/mermaid-plumbing-hero.webp",
-    className: "md:col-span-2",
+    description: "Clear service relevance, trust signals, and quote-focused calls to action.",
   },
 ];
 
@@ -86,7 +90,9 @@ export function MermaidPlumbingCaseStudy() {
               </p>
               <div className="flex flex-col gap-3 sm:flex-row">
                 <a
-                  href="#project-visuals"
+                  href="https://mermaidplumbing.com.au/"
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
                 >
                   Visit Live Website
@@ -161,23 +167,43 @@ export function MermaidPlumbingCaseStudy() {
                 and enquiry-focused presentation.
               </p>
             </div>
-            <div className="grid gap-6 md:grid-cols-2">
-              {galleryItems.map((item) => (
-                <figure
-                  key={item.title}
-                  className={`overflow-hidden rounded-xl border border-border/30 bg-card/30 ${item.className ?? ""}`}
-                >
+            <div className="space-y-6">
+              <figure className="overflow-hidden rounded-xl border border-border/30 bg-card/30">
+                <div className="bg-background/50">
                   <img
-                    src={item.image}
-                    alt={item.title}
-                    className="aspect-video h-full w-full object-cover"
+                    src={galleryItems[0].image}
+                    alt={galleryItems[0].title}
+                    className="aspect-[16/9] w-full object-cover"
                     loading="lazy"
                   />
-                  <figcaption className="border-t border-border/30 px-5 py-4 text-sm text-muted-foreground">
-                    {item.title}
-                  </figcaption>
-                </figure>
-              ))}
+                </div>
+                <figcaption className="border-t border-border/30 px-5 py-4">
+                  <div className="text-sm text-foreground">{galleryItems[0].title}</div>
+                  <p className="mt-1 text-sm text-muted-foreground">{galleryItems[0].description}</p>
+                </figcaption>
+              </figure>
+
+              <div className="grid items-start gap-6 md:grid-cols-3">
+                {galleryItems.slice(1).map((item) => (
+                  <figure
+                    key={item.title}
+                    className="overflow-hidden rounded-xl border border-border/30 bg-card/30"
+                  >
+                    <div className="flex aspect-[4/3] items-center justify-center bg-background/50">
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className={`h-full w-full ${item.imageClassName ?? "object-cover"}`}
+                        loading="lazy"
+                      />
+                    </div>
+                    <figcaption className="border-t border-border/30 px-5 py-4">
+                      <div className="text-sm text-foreground">{item.title}</div>
+                      <p className="mt-1 text-sm text-muted-foreground">{item.description}</p>
+                    </figcaption>
+                  </figure>
+                ))}
+              </div>
             </div>
           </div>
         </section>
@@ -187,8 +213,7 @@ export function MermaidPlumbingCaseStudy() {
             <h2 className="mb-5 text-3xl tracking-tight md:text-4xl">Outcome</h2>
             <p className="text-lg leading-8 text-muted-foreground">
               The result is a clean, local-focused website that presents Mermaid Plumbing as
-              professional, approachable, and easy to contact. The project can now be used as a
-              TinnieDev case study for trade and service-business website work.
+              professional, approachable, and easy to contact across desktop and mobile.
             </p>
           </div>
         </section>
