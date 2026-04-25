@@ -23,16 +23,64 @@
     </image:image>
   </url>
 
-  <!-- Mermaid Plumbing Case Study -->
+  <!-- Project Case Studies -->
   <url>
     <loc>https://tinniedev.com/projects/plumber-website</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://tinniedev.com/images/projects/mermaid-plumbing-hero.webp</image:loc>
       <image:title>Mermaid Plumbing Website Case Study</image:title>
       <image:caption>Local plumbing website case study by TinnieDev</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://tinniedev.com/projects/physio-clinic-website</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://tinniedev.com/images/projects/physio-clinic-thumbnail.webp</image:loc>
+      <image:title>Physio Clinic Website Concept</image:title>
+      <image:caption>Allied health website concept by TinnieDev</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://tinniedev.com/projects/shopify-product-store</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://tinniedev.com/images/projects/nazkatech-thumbnail.webp</image:loc>
+      <image:title>NazkaTech Product Store Case Study</image:title>
+      <image:caption>Product storefront case study by TinnieDev</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://tinniedev.com/projects/beyond-body-holistic-health</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://tinniedev.com/images/projects/beyond-body-thumbnail.webp</image:loc>
+      <image:title>Beyond Body Holistic Health Website Case Study</image:title>
+      <image:caption>Wellness brand website case study by TinnieDev</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://tinniedev.com/projects/tinnie-house-records</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://tinniedev.com/images/projects/tinnie-house-thumbnail.webp</image:loc>
+      <image:title>Tinnie House Records Website Case Study</image:title>
+      <image:caption>Creative brand website case study by TinnieDev</image:caption>
     </image:image>
   </url>
 

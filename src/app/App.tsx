@@ -11,13 +11,15 @@ import { FounderTrust } from "./components/FounderTrust";
 import { FinalCTA } from "./components/FinalCTA";
 import { LocalBusinessSchema } from "./components/LocalBusinessSchema";
 import { MobileStickyCTA } from "./components/MobileStickyCTA";
-import { MermaidPlumbingCaseStudy } from "./pages/MermaidPlumbingCaseStudy";
 import { PlumbersLandingPage } from "./pages/PlumbersLandingPage";
+import { getProjectBySlug } from "./data/projects";
+import { ProjectCaseStudyPage } from "./pages/ProjectCaseStudyPage";
 
 export default function App() {
   const pathname = window.location.pathname;
   const isPlumbersPage = pathname === "/plumbers";
-  const isMermaidPlumbingCaseStudy = pathname === "/projects/plumber-website";
+  const projectSlug = pathname.startsWith("/projects/") ? pathname.replace("/projects/", "") : "";
+  const project = projectSlug ? getProjectBySlug(projectSlug) : undefined;
 
   return (
     <div className="dark min-h-screen bg-background text-foreground">
@@ -31,8 +33,8 @@ export default function App() {
       <Navigation />
       {isPlumbersPage ? (
         <PlumbersLandingPage />
-      ) : isMermaidPlumbingCaseStudy ? (
-        <MermaidPlumbingCaseStudy />
+      ) : project ? (
+        <ProjectCaseStudyPage project={project} />
       ) : (
         <>
           <Helmet>
@@ -66,7 +68,7 @@ export default function App() {
           </main>
         </>
       )}
-      {!isPlumbersPage && !isMermaidPlumbingCaseStudy && <MobileStickyCTA />}
+      {!isPlumbersPage && !project && <MobileStickyCTA />}
     </div>
   );
 }
