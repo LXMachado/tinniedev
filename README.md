@@ -1,8 +1,6 @@
 
 # TinnieDev Website
 
-React/Vite frontend with a small Node.js backend suitable for Hostinger Node.js hosting.
-
 ## Running Locally
 
 Install dependencies:
@@ -23,36 +21,21 @@ Build the production frontend:
 npm run build
 ```
 
-Run the production Node server locally:
+Preview the production build:
 
 ```bash
-npm start
+npm run preview
 ```
 
-## Hostinger Node.js Setup
+## Hostinger Setup
 
-Use these settings in Hostinger's Node.js app panel:
+Use these settings for Hostinger GitHub deployment:
 
-- Application root: project root
-- Startup file: `server/index.js`
-- Build command: `npm install && npm run build`
-- Start command: `npm start`
-- Node version: 20 or newer
+- Framework: Vite / React
+- Root directory: `.`
+- Install command: `npm install`
+- Build command: `npm run build`
+- Output directory: `dist`
+- Entry file: leave empty
 
-Environment variables:
-
-```bash
-PORT=3000
-HOST=0.0.0.0
-SITE_ORIGIN=https://tinniedev.com
-ENQUIRY_WEBHOOK_URL=
-```
-
-`ENQUIRY_WEBHOOK_URL` is optional. When set, validated enquiries submitted to `/api/enquiries` are forwarded to that webhook.
-
-## Backend Endpoints
-
-- `GET /api/health`
-- `POST /api/enquiries`
-
-The server also serves the built frontend from `dist` and falls back to `index.html` for React routes such as `/projects/plumber-website`.
+The site is deployed as a static Vite build. React routes are handled by `public/.htaccess` on Hostinger/Apache.

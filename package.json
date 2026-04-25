@@ -3,15 +3,10 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "main": "server/index.js",
-  "engines": {
-    "node": "20.x"
-  },
   "scripts": {
     "build": "vite build",
     "dev": "vite",
-    "start": "node server/index.js",
-    "serve": "node server/index.js"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
@@ -51,7 +46,6 @@
     "cmdk": "1.1.1",
     "date-fns": "3.6.0",
     "embla-carousel-react": "8.6.0",
-    "express": "^5.2.1",
     "input-otp": "1.4.2",
     "lucide-react": "0.487.0",
     "motion": "12.23.24",
