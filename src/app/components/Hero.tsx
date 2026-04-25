@@ -1,4 +1,5 @@
 import { ArrowRight, Zap, TrendingUp, Target, Smartphone, Headphones } from "lucide-react";
+import { calendlyAuditUrl } from "./MobileStickyCTA";
 
 export function Hero() {
   return (
@@ -18,7 +19,9 @@ export function Hero() {
 
             <div className="flex flex-wrap gap-4">
               <a
-                href="#contact"
+                href={calendlyAuditUrl}
+                target="_blank"
+                rel="noreferrer"
                 className="px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all hover:scale-105 flex items-center gap-2 group"
               >
                 Book Free Audit

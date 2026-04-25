@@ -6,7 +6,10 @@ import { ValueComparison } from "./components/ValueComparison";
 import { Process } from "./components/Process";
 import { Portfolio } from "./components/Portfolio";
 import { WhyTinnieDev } from "./components/WhyTinnieDev";
+import { FounderTrust } from "./components/FounderTrust";
 import { FinalCTA } from "./components/FinalCTA";
+import { LocalBusinessSchema } from "./components/LocalBusinessSchema";
+import { MobileStickyCTA } from "./components/MobileStickyCTA";
 import { PlumbersLandingPage } from "./pages/PlumbersLandingPage";
 
 export default function App() {
@@ -14,6 +17,7 @@ export default function App() {
 
   return (
     <div className="dark min-h-screen bg-background text-foreground">
+      <LocalBusinessSchema />
       <Navigation />
       {isPlumbersPage ? (
         <PlumbersLandingPage />
@@ -26,9 +30,11 @@ export default function App() {
           <Process />
           <Portfolio />
           <WhyTinnieDev />
+          <FounderTrust />
           <FinalCTA />
         </main>
       )}
+      {!isPlumbersPage && <MobileStickyCTA />}
     </div>
   );
 }

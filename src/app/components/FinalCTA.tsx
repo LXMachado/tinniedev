@@ -1,4 +1,5 @@
 import { ArrowRight, Mail } from "lucide-react";
+import { calendlyAuditUrl } from "./MobileStickyCTA";
 
 export function FinalCTA() {
   return (
@@ -13,7 +14,9 @@ export function FinalCTA() {
 
         <div className="flex flex-wrap gap-4 justify-center">
           <a
-            href="#contact"
+            href={calendlyAuditUrl}
+            target="_blank"
+            rel="noreferrer"
             className="px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all hover:scale-105 flex items-center gap-2 group"
           >
             Book Free Audit

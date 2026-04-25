@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { calendlyAuditUrl } from "./MobileStickyCTA";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -64,7 +65,9 @@ export function Navigation() {
           </div>
 
           <a
-            href="#contact"
+            href={calendlyAuditUrl}
+            target="_blank"
+            rel="noreferrer"
             className="px-5 py-2.5 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm"
           >
             Free Audit

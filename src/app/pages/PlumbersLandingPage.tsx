@@ -3,7 +3,6 @@ import {
   BadgeCheck,
   CalendarCheck,
   Check,
-  Clock,
   Code2,
   FileText,
   Gauge,
@@ -24,8 +23,9 @@ import {
   Wrench,
   X,
 } from "lucide-react";
+import { calendlyAuditUrl } from "../components/MobileStickyCTA";
 
-const auditHref = "mailto:hello@tinniedev.com?subject=Free%20plumbing%20website%20audit";
+const auditHref = calendlyAuditUrl;
 const quoteHref = "mailto:hello@tinniedev.com?subject=Plumbing%20website%20quote%20request";
 
 const heroBullets = [
@@ -87,9 +87,13 @@ const pricing = [
 const regions = ["Gold Coast", "Brisbane", "Sunshine Coast", "Tweed", "Logan", "Ipswich"];
 
 function PrimaryButton({ href, children }: { href: string; children: React.ReactNode }) {
+  const isExternal = href.startsWith("http");
+
   return (
     <a
       href={href}
+      target={isExternal ? "_blank" : undefined}
+      rel={isExternal ? "noreferrer" : undefined}
       className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-all hover:bg-primary/90 hover:scale-[1.02]"
     >
       {children}
@@ -366,6 +370,8 @@ export function PlumbersLandingPage() {
                   </ul>
                   <a
                     href={plan.featured ? auditHref : quoteHref}
+                    target={plan.featured ? "_blank" : undefined}
+                    rel={plan.featured ? "noreferrer" : undefined}
                     className={`mt-8 inline-flex w-full items-center justify-center gap-2 rounded-lg px-5 py-3 text-sm transition-colors ${
                       plan.featured
                         ? "bg-primary text-primary-foreground hover:bg-primary/90"
@@ -461,7 +467,12 @@ export function PlumbersLandingPage() {
 
       <div className="fixed inset-x-0 bottom-0 z-50 border-t border-border/50 bg-background/90 p-3 backdrop-blur md:hidden">
         <div className="grid grid-cols-2 gap-3">
-          <a href={auditHref} className="flex items-center justify-center gap-2 rounded-lg bg-primary px-4 py-3 text-sm text-primary-foreground">
+          <a
+            href={auditHref}
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center justify-center gap-2 rounded-lg bg-primary px-4 py-3 text-sm text-primary-foreground"
+          >
             <Phone className="h-4 w-4" />
             Free Audit
           </a>

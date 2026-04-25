@@ -1,4 +1,5 @@
 import { Check, ArrowRight } from "lucide-react";
+import { calendlyAuditUrl } from "./MobileStickyCTA";
 
 export function Services() {
   const plans = [
@@ -103,7 +104,10 @@ export function Services() {
                 ))}
               </ul>
 
-              <button
+              <a
+                href={plan.highlighted ? calendlyAuditUrl : "#contact"}
+                target={plan.highlighted ? "_blank" : undefined}
+                rel={plan.highlighted ? "noreferrer" : undefined}
                 className={`w-full py-3 rounded-lg transition-all flex items-center justify-center gap-2 group ${
                   plan.highlighted
                     ? "bg-primary text-primary-foreground hover:bg-primary/90"
@@ -112,7 +116,7 @@ export function Services() {
               >
                 {plan.cta}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </button>
+              </a>
             </div>
           ))}
         </div>
