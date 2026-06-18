@@ -14,9 +14,10 @@ import { MobileStickyCTA } from "./components/MobileStickyCTA";
 import { PlumbersLandingPage } from "./pages/PlumbersLandingPage";
 import { getProjectBySlug } from "./data/projects";
 import { ProjectCaseStudyPage } from "./pages/ProjectCaseStudyPage";
+import { usePathname } from "./lib/navigation";
 
 export default function App() {
-  const pathname = window.location.pathname;
+  const pathname = usePathname();
   const isPlumbersPage = pathname === "/plumbers";
   const projectSlug = pathname.startsWith("/projects/") ? pathname.replace("/projects/", "") : "";
   const project = projectSlug ? getProjectBySlug(projectSlug) : undefined;

@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { ProjectImage } from "../components/ProjectImage";
 import { calendlyAuditUrl } from "../components/MobileStickyCTA";
 import type { Project } from "../data/projects";
+import { navigateTo } from "../lib/navigation";
 
 type ProjectCaseStudyPageProps = {
   project: Project;
@@ -72,6 +73,10 @@ export function ProjectCaseStudyPage({ project }: ProjectCaseStudyPageProps) {
                 )}
                 <a
                   href="/#work"
+                  onClick={(event) => {
+                    event.preventDefault();
+                    navigateTo("/#work");
+                  }}
                   className="inline-flex items-center justify-center gap-2 rounded-lg border border-border/60 px-5 py-3 text-sm font-medium text-foreground transition-colors hover:bg-card/50"
                 >
                   <ArrowLeft className="h-4 w-4" />

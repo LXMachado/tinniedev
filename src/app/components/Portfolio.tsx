@@ -3,6 +3,7 @@ import { ProjectImage } from "./ProjectImage";
 import { projects } from "../data/projects";
 import { SectionHeading } from "./home/SectionHeading";
 import { Reveal } from "./home/Reveal";
+import { navigateTo } from "../lib/navigation";
 
 export function Portfolio() {
   return (
@@ -22,6 +23,10 @@ export function Portfolio() {
             >
               <a
                 href={`/projects/${project.slug}`}
+                onClick={(event) => {
+                  event.preventDefault();
+                  navigateTo(`/projects/${project.slug}`);
+                }}
                 className="group block overflow-hidden rounded-[26px] border border-white/8 bg-white/[0.025] shadow-[0_24px_60px_-38px_rgba(0,0,0,0.9)] transition duration-300 hover:-translate-y-1.5 hover:border-white/14"
               >
                 <div className="relative aspect-[1.18] overflow-hidden bg-gradient-to-br from-[#12151d] to-[#0d0e12]">
