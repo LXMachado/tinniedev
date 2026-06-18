@@ -22,10 +22,10 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden px-6 pb-24 pt-32 lg:px-8 lg:pb-28 lg:pt-36">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(79,134,247,0.16),transparent_34%),linear-gradient(180deg,rgba(255,255,255,0.02),transparent_34%)]" />
-      <div className="pointer-events-none absolute left-1/2 top-14 h-[28rem] w-[28rem] -translate-x-1/2 rounded-full bg-[#D3F263]/18 blur-[110px]" />
+      <div className="pointer-events-none absolute left-1/2 top-14 h-[24rem] w-[24rem] -translate-x-1/2 rounded-full bg-[#D3F263]/16 blur-[72px] md:h-[28rem] md:w-[28rem] md:blur-[110px]" />
 
       <div className="relative mx-auto grid max-w-[1180px] gap-16 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
-        <Reveal className="max-w-[36rem]">
+        <Reveal className="max-w-[36rem]" disabled>
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#EEF9BD]">
             <Sparkles className="h-3.5 w-3.5 text-[#D3F263]" />
             Premium local web development
@@ -66,8 +66,8 @@ export function Hero() {
           </div>
         </Reveal>
 
-        <Reveal delay={120}>
-          <div className="relative mx-auto w-full max-w-[34rem] rounded-[30px] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))] p-4 shadow-[0_30px_80px_-40px_rgba(0,0,0,0.85)] backdrop-blur-xl">
+        <Reveal disabled>
+          <div className="relative mx-auto w-full max-w-[34rem] rounded-[30px] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))] p-4 shadow-[0_30px_80px_-40px_rgba(0,0,0,0.85)] backdrop-blur-md md:backdrop-blur-xl">
             <div className="absolute inset-x-10 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
             <div className="rounded-[24px] border border-white/8 bg-[#0f1015]/92 p-5 md:p-6">
               <div className="flex items-center justify-between rounded-[18px] border border-white/8 bg-white/[0.03] px-4 py-3">

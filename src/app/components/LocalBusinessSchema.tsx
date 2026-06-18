@@ -3,8 +3,8 @@ const localBusinessSchema = {
   "@type": "ProfessionalService",
   name: "TinnieDev",
   url: "https://tinniedev.com",
-  logo: "https://tinniedev.com/brand-monogram.png",
-  image: "https://tinniedev.com/alexandre-machado-australian-web-developer.png",
+  logo: "https://tinniedev.com/brand-monogram.webp",
+  image: "https://tinniedev.com/alexandre-machado-australian-web-developer.webp",
   description:
     "Gold Coast-based web developer building fast websites, lead generation systems, and custom business systems for Australian service businesses.",
   address: {

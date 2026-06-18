@@ -134,7 +134,7 @@ function SectionHeading({
 
 export function PlumbersLandingPage() {
   const pageUrl = "https://tinniedev.com/plumbers";
-  const imageUrl = "https://tinniedev.com/alexandre-machado-australian-web-developer.png";
+  const imageUrl = "https://tinniedev.com/alexandre-machado-australian-web-developer.webp";
   
   return (
     <>
@@ -183,7 +183,7 @@ export function PlumbersLandingPage() {
             "@type": "ProfessionalService",
             "name": "TinnieDev Plumbing Website Design",
             "url": pageUrl,
-            "logo": "https://tinniedev.com/brand-monogram.png",
+            "logo": "https://tinniedev.com/brand-monogram.webp",
             "image": imageUrl,
             "description": "Professional plumbing website design and development services for Australian plumbing businesses. Fast, mobile-first websites that generate more calls and quote requests.",
             "address": {
@@ -529,10 +529,11 @@ export function PlumbersLandingPage() {
             <div className="rounded-2xl border border-border/40 bg-card/30 p-3">
               <div className="relative aspect-[4/5] overflow-hidden rounded-xl border border-border/30 bg-accent/20">
                 <img
-                  src="/alexandre-machado-australian-web-developer.png"
+                  src="/alexandre-machado-australian-web-developer.webp"
                   alt="Alexandre Machado, Gold Coast-based developer and founder of TinnieDev"
                   className="h-full w-full object-cover"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background/95 via-background/70 to-transparent p-6 pt-24">
                   <div className="text-3xl">Alexandre Machado</div>
@@ -577,7 +578,13 @@ export function PlumbersLandingPage() {
           <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-[1fr_1.4fr_1fr]">
             <div>
               <div className="flex items-center gap-3 text-xl">
-                <img src="/brand-monogram.png" alt="TinnieDev monogram logo" className="h-8 w-10 object-contain" />
+                <img
+                  src="/brand-monogram.webp"
+                  alt="TinnieDev monogram logo"
+                  className="h-8 w-10 object-contain"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <span>TinnieDev</span>
               </div>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">

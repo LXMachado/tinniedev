@@ -47,13 +47,13 @@ export default function App() {
             <meta property="og:description" content="Premium websites and lead generation systems for Australian service businesses. Direct developer access, fast performance, and proven conversion results." />
             <meta property="og:url" content="https://tinniedev.com/" />
             <meta property="og:type" content="website" />
-            <meta property="og:image" content="https://tinniedev.com/alexandre-machado-australian-web-developer.png" />
+            <meta property="og:image" content="https://tinniedev.com/alexandre-machado-australian-web-developer.webp" />
             <meta property="og:site_name" content="TinnieDev" />
             <meta property="og:locale" content="en_AU" />
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content="TinnieDev - Gold Coast Web Developer | High-Performance Websites" />
             <meta name="twitter:description" content="Building fast, conversion-focused websites for Australian service businesses." />
-            <meta name="twitter:image" content="https://tinniedev.com/alexandre-machado-australian-web-developer.png" />
+            <meta name="twitter:image" content="https://tinniedev.com/alexandre-machado-australian-web-developer.webp" />
             <meta name="twitter:site" content="@tinniedev" />
           </Helmet>
           <main>

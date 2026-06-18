@@ -6,6 +6,7 @@ type ProjectImageProps = {
   title?: string;
   className?: string;
   loading?: "eager" | "lazy";
+  fetchPriority?: "high" | "low" | "auto";
 };
 
 export function ProjectImage({
@@ -14,6 +15,7 @@ export function ProjectImage({
   title,
   className = "h-full w-full object-cover",
   loading = "lazy",
+  fetchPriority = "auto",
 }: ProjectImageProps) {
   const [hasError, setHasError] = useState(false);
 
@@ -37,6 +39,8 @@ export function ProjectImage({
       alt={alt}
       className={className}
       loading={loading}
+      decoding="async"
+      fetchPriority={fetchPriority}
       onError={() => setHasError(true)}
     />
   );

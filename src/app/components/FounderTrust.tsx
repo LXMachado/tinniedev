@@ -15,10 +15,11 @@ export function FounderTrust() {
         <Reveal className="rounded-[24px] border border-white/8 bg-white/[0.025] p-3">
           <div className="relative aspect-[4/5] overflow-hidden rounded-[18px] border border-white/8 bg-[#15161b]">
             <img
-              src="/alexandre-machado-australian-web-developer.png"
+              src="/alexandre-machado-australian-web-developer.webp"
               alt="Alexandre Machado, founder and developer at TinnieDev"
               className="h-full w-full object-cover"
               loading="lazy"
+              decoding="async"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0c0c0e]/95 via-[#0c0c0e]/55 to-transparent" />
             <div className="absolute inset-x-0 bottom-0 p-6 pt-24">

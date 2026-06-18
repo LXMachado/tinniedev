@@ -47,9 +47,11 @@ export function FinalCTA() {
           <div className="flex flex-col items-center gap-3 text-sm text-[#8a8a92]">
             <div className="flex items-center gap-3">
               <img
-                src="/brand-monogram.png"
+                src="/brand-monogram.webp"
                 alt="TinnieDev"
                 className="h-6 w-6 rounded-[7px] object-cover"
+                loading="lazy"
+                decoding="async"
               />
               <span className="font-semibold text-[#c2c2c8]">TinnieDev</span>
             </div>

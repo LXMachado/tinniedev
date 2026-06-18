@@ -6,11 +6,12 @@ type RevealProps = {
   className?: string;
   delay?: number;
   y?: number;
+  disabled?: boolean;
 };
 
-export function Reveal({ children, className, delay = 0, y = 24 }: RevealProps) {
+export function Reveal({ children, className, delay = 0, y = 24, disabled = false }: RevealProps) {
   const ref = useRef<HTMLDivElement | null>(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(disabled);
   const [reduceMotion, setReduceMotion] = useState(false);
 
   useEffect(() => {
@@ -24,6 +25,11 @@ export function Reveal({ children, className, delay = 0, y = 24 }: RevealProps) 
   }, []);
 
   useEffect(() => {
+    if (disabled) {
+      setIsVisible(true);
+      return;
+    }
+
     if (reduceMotion) {
       setIsVisible(true);
       return;
@@ -52,17 +58,17 @@ export function Reveal({ children, className, delay = 0, y = 24 }: RevealProps) 
     observer.observe(node);
 
     return () => observer.disconnect();
-  }, [reduceMotion]);
+  }, [disabled, reduceMotion]);
 
   return (
     <div
       ref={ref}
       style={{
-        transitionDelay: `${delay}ms`,
+        transitionDelay: disabled ? "0ms" : `${delay}ms`,
         transform: isVisible ? "translateY(0)" : `translateY(${y}px)`,
       }}
       className={cn(
-        "transition-all duration-700 ease-[cubic-bezier(.22,.61,.36,1)]",
+        disabled ? "" : "transition-all duration-700 ease-[cubic-bezier(.22,.61,.36,1)]",
         isVisible ? "opacity-100" : "opacity-0",
         className,
       )}

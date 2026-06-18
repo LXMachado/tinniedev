@@ -26,9 +26,11 @@ export function Navigation() {
         <div className="flex items-center justify-between h-20">
           <a href="/" className="flex items-center gap-3 text-xl tracking-tight text-[#f6f6f7]">
             <img
-              src="/brand-monogram.png"
+              src="/brand-monogram.webp"
               alt="TinnieDev monogram"
               className="h-9 w-10 rounded-[10px] object-contain"
+              decoding="async"
+              fetchPriority="high"
             />
             <span className="font-medium tracking-[-0.03em]">TinnieDev</span>
           </a>
