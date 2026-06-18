@@ -1,4 +1,6 @@
 import { X, Check } from "lucide-react";
+import { Reveal } from "./home/Reveal";
+import { SectionHeading } from "./home/SectionHeading";
 
 export function ValueComparison() {
   const problems = [
@@ -18,42 +20,61 @@ export function ValueComparison() {
   ];
 
   return (
-    <section className="py-24 px-6 lg:px-8 bg-accent/10">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12">
-          <div>
-            <h2 className="text-3xl lg:text-4xl mb-8">
-              The Hidden Cost of an Outdated Website
-            </h2>
-            <div className="space-y-4">
+    <section className="bg-[#101116] px-6 py-24 lg:px-8">
+      <div className="mx-auto max-w-[1180px]">
+        <SectionHeading
+          eyebrow="Value"
+          title="Better websites remove friction from every part of the enquiry journey."
+          text="The difference is not cosmetic. Faster, clearer websites capture intent earlier, build trust faster, and make follow-up easier."
+        />
+        <div className="grid gap-8 md:grid-cols-2">
+          <Reveal>
+            <div className="rounded-[28px] border border-red-400/14 bg-[linear-gradient(180deg,rgba(127,29,29,0.18),rgba(255,255,255,0.02))] p-8">
+              <h2 className="text-[1.9rem] font-semibold leading-tight tracking-[-0.03em] text-[#f6f6f7]">
+                The Hidden Cost of an Outdated Website
+              </h2>
+              <p className="mt-4 max-w-[32rem] text-base leading-7 text-[#9a9aa2]">
+                Small issues compound into lost trust, slower response times, and missed local opportunities.
+              </p>
+              <div className="mt-8 space-y-4">
               {problems.map((problem, index) => (
                 <div
                   key={index}
-                  className="flex gap-4 items-start p-4 rounded-xl bg-destructive/10 border border-destructive/20"
+                  className="flex items-start gap-4 rounded-[18px] border border-white/7 bg-black/18 p-4"
                 >
-                  <X className="w-5 h-5 text-destructive flex-shrink-0 mt-0.5" />
-                  <span className="text-muted-foreground">{problem}</span>
+                  <div className="flex h-9 w-9 items-center justify-center rounded-full bg-red-400/12">
+                    <X className="h-4 w-4 text-red-300" />
+                  </div>
+                  <span className="pt-1 text-sm leading-6 text-[#c8c8ce]">{problem}</span>
                 </div>
               ))}
+              </div>
             </div>
-          </div>
+          </Reveal>
 
-          <div>
-            <h2 className="text-3xl lg:text-4xl mb-8">
-              What TinnieDev Delivers
-            </h2>
-            <div className="space-y-4">
+          <Reveal delay={120}>
+            <div className="rounded-[28px] border border-emerald-400/14 bg-[linear-gradient(180deg,rgba(16,185,129,0.12),rgba(255,255,255,0.02))] p-8">
+              <h2 className="text-[1.9rem] font-semibold leading-tight tracking-[-0.03em] text-[#f6f6f7]">
+                What TinnieDev Delivers
+              </h2>
+              <p className="mt-4 max-w-[32rem] text-base leading-7 text-[#9a9aa2]">
+                The goal is a business asset that looks credible, performs cleanly, and supports better decisions.
+              </p>
+              <div className="mt-8 space-y-4">
               {solutions.map((solution, index) => (
                 <div
                   key={index}
-                  className="flex gap-4 items-start p-4 rounded-xl bg-chart-2/10 border border-chart-2/20"
+                  className="flex items-start gap-4 rounded-[18px] border border-white/7 bg-black/18 p-4"
                 >
-                  <Check className="w-5 h-5 text-chart-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-foreground">{solution}</span>
+                  <div className="flex h-9 w-9 items-center justify-center rounded-full bg-emerald-400/12">
+                    <Check className="h-4 w-4 text-emerald-300" />
+                  </div>
+                  <span className="pt-1 text-sm leading-6 text-[#ebebef]">{solution}</span>
                 </div>
               ))}
+              </div>
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>

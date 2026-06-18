@@ -1,4 +1,7 @@
 import { User, Building2, Receipt, Code2, MapPin, Zap } from "lucide-react";
+import { SectionHeading } from "./home/SectionHeading";
+import { Reveal } from "./home/Reveal";
+import { SpotlightCard } from "./home/SpotlightCard";
 
 export function WhyTinnieDev() {
   const reasons = [
@@ -35,26 +38,24 @@ export function WhyTinnieDev() {
   ];
 
   return (
-    <section id="about" className="py-24 px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl lg:text-5xl mb-6">Why Work with TinnieDev</h2>
-        </div>
+    <section id="about" className="px-6 py-24 lg:px-8">
+      <div className="mx-auto max-w-[1180px]">
+        <SectionHeading eyebrow="Why TinnieDev" title="Why Work with TinnieDev" />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {reasons.map((reason, index) => (
-            <div
+            <Reveal
               key={index}
-              className="bg-card/30 border border-border/30 rounded-2xl p-8 hover:bg-card/50 transition-all"
+              delay={index * 70}
             >
-              <div className="w-12 h-12 rounded-full bg-accent/50 flex items-center justify-center mb-6 border border-border/30">
-                <reason.icon className="w-6 h-6 text-foreground" />
-              </div>
-              <h3 className="text-xl mb-3">{reason.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                {reason.description}
-              </p>
-            </div>
+              <SpotlightCard className="h-full">
+                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-[14px] border border-[#D3F263]/20 bg-[#D3F263]/10">
+                  <reason.icon className="h-5 w-5 text-[#D3F263]" />
+                </div>
+                <h3 className="text-[1.15rem] font-semibold leading-7 text-[#f6f6f7]">{reason.title}</h3>
+                <p className="mt-3 text-sm leading-6 text-[#9a9aa2]">{reason.description}</p>
+              </SpotlightCard>
+            </Reveal>
           ))}
         </div>
       </div>

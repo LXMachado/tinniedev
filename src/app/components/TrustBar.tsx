@@ -11,15 +11,18 @@ export function TrustBar() {
   ];
 
   return (
-    <section className="py-16 px-6 lg:px-8 border-y border-border/30">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+    <section className="border-y border-white/6 px-6 py-14 lg:px-8">
+      <div className="mx-auto max-w-[1180px]">
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
           {features.map((feature, index) => (
-            <div key={index} className="flex flex-col items-center text-center gap-3">
-              <div className="w-12 h-12 rounded-full bg-accent/50 flex items-center justify-center border border-border/30">
-                <feature.icon className="w-5 h-5 text-foreground" />
+            <div
+              key={index}
+              className="flex items-center gap-3 rounded-[18px] border border-white/8 bg-white/[0.025] px-4 py-4 text-left"
+            >
+              <div className="flex h-11 w-11 items-center justify-center rounded-[14px] border border-[#D3F263]/20 bg-[#D3F263]/10">
+                <feature.icon className="h-5 w-5 text-[#D3F263]" />
               </div>
-              <div className="text-sm text-muted-foreground">{feature.label}</div>
+              <div className="text-sm leading-5 text-[#d5d5db]">{feature.label}</div>
             </div>
           ))}
         </div>

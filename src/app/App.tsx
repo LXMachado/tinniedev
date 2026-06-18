@@ -22,7 +22,7 @@ export default function App() {
   const project = projectSlug ? getProjectBySlug(projectSlug) : undefined;
 
   return (
-    <div className="dark min-h-screen bg-background text-foreground">
+    <div className="dark min-h-screen overflow-x-hidden bg-[#0c0c0e] text-[#f6f6f7]">
       <Helmet>
         <meta name="theme-color" content="#0a0e17" />
         <meta name="color-scheme" content="dark" />
